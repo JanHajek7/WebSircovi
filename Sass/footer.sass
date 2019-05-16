@@ -1,0 +1,79 @@
+@import "variables"
+
+footer
+    width: 100%
+    height: auto
+    background-color: #213746
+    font-size: 14px
+    .containerFooter
+        display: flex
+        flex-direction: row
+        padding: 9px 30px
+        +tablet
+            flex-wrap: wrap
+        .contact
+            width: 50%
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
+            +tablet
+                width: 100%
+                justify-content: center
+            +phone
+                flex-direction: column
+                width: 100%
+                height: auto
+                
+            .box
+                padding: 20px
+                +tablet
+                    padding: 20px 45px
+                +phone
+                    padding: 15px
+                .item
+                    display: flex
+                    flex-direction: row
+                    padding: 4px 5px
+                    p,a
+                        padding-left: 15px
+                        color: white
+                    a
+                        text-decoration: none
+                        
+                    i
+                        color: $green
+        .logoFooter
+            width: (50%)
+            padding: 10px 20px
+            +tablet
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                margin-bottom: 15px
+            +phone
+                flex-direction: column
+            img
+                padding-bottom: 15px
+                +phone
+                    padding: 25px
+            p
+                color: white
+                line-height: 1.2
+                margin-top: 5px
+                +phone
+                    padding-left: 20px
+            p, img
+                +tablet
+                    padding: 20px 50px
+                +phone
+                    padding: 10px
+.copyright
+    text-align: center
+    color: white
+    font-size: 14px
+    padding-bottom: 10px
+    opacity: 0.7
+   
+

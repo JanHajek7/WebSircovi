@@ -1,0 +1,15 @@
+{
+    "liveSassCompile.settings.formats": [{
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/CSS/"
+    }],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.excludeList": [
+        "/SCSS/variables.scss"
+
+    ],
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
+
+}

@@ -1,0 +1,235 @@
+@import "variables"
+@import "animace"
+
+
+.image-container
+    z-index: 1
+    text-align: center 
+    position: relative
+    .bigger
+        display: block
+        +tablet
+            display: none
+    .smaller
+        display: none
+        +tablet
+            display: block
+    .text-container
+        position: absolute
+        top: 35%
+        right: 0
+        bottom: 0 
+        left: 0
+        width: 100%
+        text-align: center
+        vertical-align: middle
+        animation: animate 2s
+        +phone
+            top: 20%
+
+        h1
+            color: white
+            line-height: 1.5
+            font-size: 30px
+            vertical-align: middle
+            +phone  
+                font-size: 20px
+        a
+            display: inline-block
+            color: white
+            border: 1px solid $green
+            border-radius: 15px
+            padding: 8px 30px
+            background-color: $green
+            text-decoration: none
+            margin-top: 15px
+            transition: padding 0.3s
+            &:hover
+                transition: all 0.3s
+                padding: 8px 50px
+            .fas
+                font-size: 12px
+                padding-left: 10px
+                display: inline-table
+
+
+  
+.services
+    height: auto
+    text-align: center
+    .title
+        +title
+    hr
+        +hr(1) 
+    .services-container
+        margin-bottom: 50px
+        +flexbox
+        +tablet
+            flex-wrap: wrap
+        .item
+            position: relative
+            width: (100%/3)
+            margin: 20px
+            padding: 20px
+            font-size: 15px
+            +tablet
+                height: 40%
+                width: 40%
+            +phone
+                width: 100%
+
+            .circle 
+                position: absolute 
+                left: calc(50% - 5px)
+                transform: translateX(-50%)
+                top: -46px
+                z-index: 1
+                img
+                    width: 100px
+                    border-radius: 50%
+                    border: 1px solid white
+                    background: white
+                    z-index: -654     
+            div
+                margin: 0px 10px
+                line-height: 1.25         
+            h2
+                font-size: 16px
+                padding: 0 20px
+                margin: 40px 0
+                line-height: 1.2
+                color: $green
+                font-weight: bold 
+
+
+.text-secondary
+    font-size: 14px !important
+
+                 
+.counter 
+    animation-duration: 1s
+    animation-delay: 0s
+
+.counterUp-container
+    text-align: center
+    margin: 20px 40px 150px 40px
+    
+    h1
+        +title
+        margin-bottom: 70px
+    .containerr
+        width: 100%
+        margin: 0px auto
+        .box
+            width: 100%
+            +flexbox
+            justify-content: space-around
+            +tablet
+                flex-direction: column
+            .item
+                +flexbox
+                flex-direction: column
+                width: (100%/3)
+                height: 20%
+                +tablet
+                    width: 40%
+                    margin: 25px
+                    height: 30%
+                +phone 
+                    width: 50%
+                +phone-mini
+                    width: 70%
+                &:first-child
+                    border-right: 3px dashed $green
+                    +tablet
+                        border-bottom: 3px dashed $green
+                        border-right: none
+                        padding: 25px
+                &:last-child
+                    border-left: 3px dashed $green
+                    +tablet
+                        border-top: 3px dashed $green
+                        border-left: none
+                        padding: 25px
+                i,p,h2
+                    padding-bottom: 20px
+                p
+                    font-size: 30px
+                h2
+                    font-size: 18px
+                
+.mail-container
+    width: 100%
+    .bg-image
+        background-image: url('/images/bg-mail.jpg')
+        background-repeat: no-repeat
+        background-position: center center
+        height: 586px
+        width: 100%
+        .title-container
+            text-align: center
+            padding: 1px
+            margin-bottom: 40px
+            +phone
+                margin-bottom: 0px
+            .title
+                +title
+            p
+                color: white
+        .contact-form
+            color: white
+            width: 30%
+            margin: 0px auto
+            +small-desktop
+                width: 40%
+            +tablet
+                width: 50%
+            +phone
+                width: 70%
+            
+            textarea
+                width: 100%
+                resize: none
+                padding: 7px
+                margin: 7px 0px
+                border: 3px solid #d1d1d1
+                border-radius: 10px
+                outline: none
+                &:focus
+                    border: 3px solid $green
+            input,button
+                width: 100%
+                padding: 7px
+                margin: 7px 0px
+                border: 3px solid #d1d1d1
+                border-radius: 10px
+                line-height: normal
+                outline: none
+                &:focus
+                    border: 3px solid $green
+                &::placeholder
+                    font-size: 14px
+            button
+                    background-color: $green
+            .inline
+                display: flex
+                flex-direction: row
+                align-items: center
+
+.map-container
+    text-align: center
+    width: 100%
+    height: 580px
+    margin-bottom: 50px
+
+    iframe
+        width: 100%
+        height: 540px
+        display: block
+        position: relative
+        pointer-events: none
+.clicked
+    pointer-events: auto
+        
+
+

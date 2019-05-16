@@ -1,0 +1,55 @@
+@import "variables"
+
+
+.price-container
+    text-align: center
+    width: 100%
+    line-height: 1.2
+    max-width: 1200px
+    margin: 0px auto
+    +small-desktop
+        width: 100%
+        margin: 0px
+        padding: 0px 50px
+    +phone-mini
+        padding: 0px 10px
+
+    h1
+        +title
+    hr
+        +hr(1)
+    p
+        font-size: 14px
+    .table
+        display: flex
+        justify-content: center
+        width: 100%
+        margin-top: 30px
+        table
+            font-size: 13px
+            tr, td
+                padding: 15px
+            tr:first-child
+                td
+                    border: none
+            tr
+                td:last-child
+                    padding-left: 150px
+                    +phone
+                        padding: 20px
+    div
+        margin-bottom: 20px            
+            
+
+    .cenik-text
+        width: 100%
+        margin-bottom: 80px
+        +small-desktop
+            width: 100%
+            padding: 0px 50px
+        +phone
+            padding: 0px
+            
+        p
+            font-size: 14px
+            line-height: 1.3

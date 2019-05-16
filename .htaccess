@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^Sircovi\.cz$
+RewriteRule ^(.*)$ http://www.Sircovi.cz/$1 [R=301,L]

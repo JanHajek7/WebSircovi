@@ -1,0 +1,133 @@
+.About-container {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.About-container h1 {
+  margin: 50px 0px 30px 0px;
+  color: #98ce00;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.About-container hr {
+  border-top: 3px solid #98ce00;
+  width: 50px;
+  border-radius: 2px;
+  margin-top: 2rem;
+  margin-bottom: 70px;
+}
+
+.About-container .inline {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 1200px) {
+  .About-container .inline {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .About-container .inline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.About-container .inline .text {
+  overflow: hidden;
+  display: block;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .About-container .inline .text {
+    margin: 0px 10px;
+  }
+}
+
+.About-container .inline .text p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.About-container .inline .text .tt {
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.About-container .inline .image {
+  display: block;
+  padding: 0px;
+  margin-right: 50px;
+  padding: 20px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .About-container .inline .image .fotka {
+    width: 100%;
+  }
+}
+
+.car-container {
+  text-align: center;
+  width: 100%;
+}
+
+.car-container h1 {
+  margin: 50px 0px 30px 0px;
+  color: #98ce00;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.car-container hr {
+  border-top: 3px solid #98ce00;
+  width: 50px;
+  border-radius: 2px;
+  margin-top: 2rem;
+  margin-bottom: 70px;
+}
+
+.car-container .image-container {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .car-container .image-container {
+    display: block;
+  }
+}
+
+.car-container .image-container img {
+  width: 48%;
+  height: auto;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .car-container .image-container img {
+    width: 80%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=Onas.css.map */

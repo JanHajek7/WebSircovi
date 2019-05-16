@@ -1,0 +1,174 @@
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #213746;
+  font-size: 14px;
+}
+
+footer .containerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 9px 30px;
+}
+
+@media only screen and (max-width: 1023px) {
+  footer .containerFooter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+footer .containerFooter .contact {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  footer .containerFooter .contact {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .containerFooter .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer .containerFooter .contact .box {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1023px) {
+  footer .containerFooter .contact .box {
+    padding: 20px 45px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .containerFooter .contact .box {
+    padding: 15px;
+  }
+}
+
+footer .containerFooter .contact .box .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4px 5px;
+}
+
+footer .containerFooter .contact .box .item p, footer .containerFooter .contact .box .item a {
+  padding-left: 15px;
+  color: white;
+}
+
+footer .containerFooter .contact .box .item a {
+  text-decoration: none;
+}
+
+footer .containerFooter .contact .box .item i {
+  color: #98ce00;
+}
+
+footer .containerFooter .logoFooter {
+  width: 50%;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 1023px) {
+  footer .containerFooter .logoFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .containerFooter .logoFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .containerFooter .logoFooter img {
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .containerFooter .logoFooter img {
+    padding: 25px;
+  }
+}
+
+footer .containerFooter .logoFooter p {
+  color: white;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .containerFooter .logoFooter p {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  footer .containerFooter .logoFooter p, footer .containerFooter .logoFooter img {
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .containerFooter .logoFooter p, footer .containerFooter .logoFooter img {
+    padding: 10px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding-bottom: 10px;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=footer.css.map */

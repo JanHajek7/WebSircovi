@@ -1,0 +1,77 @@
+@import "variables"
+
+.About-container
+    text-align: center
+    width: 100%
+    margin-bottom: 100px
+    h1
+        +title
+    hr
+        +hr(1)
+    .inline
+        max-width: 1200px
+        margin: 0px auto
+        display: flex
+        flex-direction: row
+        +small-desktop
+            width: 100%
+        +tablet
+            flex-direction: column
+        .text 
+            overflow: hidden
+            display: block
+            padding: 20px
+            margin-left: 50px
+            +phone
+                margin: 0px 10px
+            p
+                font-size: 16px
+                text-align: left
+                line-height: 1.5
+            .tt
+                margin-top: 80px
+                font-weight: bold
+                font-size: 20px
+
+        .image
+            display: block
+            padding: 0px
+            margin-right: 50px
+            padding: 20px
+            width: 90%
+            margin: 0px auto
+            .fotka
+                +phone 
+                    width: 100%
+.car-container
+    text-align: center
+    width: 100%
+    h1
+        +title
+    hr
+        +hr(1)
+    .image-container
+        width: 100%
+        display: inline-block
+        text-align: center
+        +tablet
+            display: block
+        img
+            width: 48%
+            height: auto
+            padding: 15px
+            +tablet
+                width: 80%
+                height: auto
+
+
+
+
+
+            
+
+                
+                
+                
+                
+            
